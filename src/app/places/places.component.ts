@@ -27,6 +27,7 @@ export class PlacesComponent implements OnInit {
   loggin;
   // ........................///
   finalTotal;
+  totalSingleGame;
 
 
   constructor(private route: ActivatedRoute, private placeService: PlacesService, private httpService: HttpServiceService, private router: Router) {
@@ -57,12 +58,15 @@ export class PlacesComponent implements OnInit {
 
     })
     this.placeLoggedin = this.httpService.getData("loggedin");
+    this.placeService.totalService.subscribe(data => {
+      this.finalTotal = data;
+
+    })
   }
 
   ngOnInit() {
-    this.placeService.totalService.subscribe(data => {
-      this.finalTotal = data;
-    })
+
+    this.finalTotal = 0;
   }
 
 
@@ -73,12 +77,14 @@ export class PlacesComponent implements OnInit {
     this.loggin = this.httpService.getData("loggedin");
     if (this.loggin == true) {
       if (this.finalTotal != 0) {
-        this.httpService.setData("finalTotal", this.finalTotal)
+        this.httpService.setData("finalTotal", this.finalTotal);
         this.httpService.setData("choosenGames", this.placeService.arrOfGames);
+        this.finalTotal = 0;
+        this.placeService.arrOfGames = [];
         this.router.navigate(["/reservation/FoYalaaPayment"])
-
-
       }
+
+
     }
     else {
       alert("you have to register");

@@ -7,54 +7,111 @@ import { HttpServiceService } from '../http-service.service'
   styleUrls: ['./reservation.component.scss']
 })
 export class ReservationComponent implements OnInit {
-  selctedHour: any = "select Time";
+  selctedHour: any = [];
   user;
-  selectedGames;
+  selectedGames = []
   total;
   // ........//
   selectedClasses;
   createdArray = [];
+  allowTosubmit = false;
+  visaNumber = "";
+  visaPassword = "";
+
 
   constructor(private service: HttpServiceService) {
+
     this.user = this.service.getData("user");
     this.selectedGames = this.service.getData("choosenGames");
     this.total = this.service.getData("finalTotal");
 
+
+
     localStorage.removeItem("finalTotal");
     localStorage.removeItem("choosenGames");
 
-    // this.selectedClasses = document.getElementsByClassName("0")
-    // console.log(this.selectedClasses);
+
 
     for (let i of this.selectedGames) {
       let obj = {
         id: i.id,
+        name: i.name,
+        price: i.price,
+        desc: i.desc,
+        count: i.count,
+        placeId: i.placeId,
+        img: i.img,
         hours: "0",
         date: "0"
       }
+      this.selctedHour.push("select Time")
       this.createdArray.push(obj)
+
     }
 
 
   }
 
+
   ngOnInit() {
+    // this.selectedGames = []
+
   }
 
   getDate(val, i) {
-    // console.log(val.srcElement.value)
+
     this.createdArray[i].date = val.srcElement.value;
-    // console.log(this.createdArray)
+    this.checking()
+
   }
 
   gettingHours(val, i) {
-    // console.log(val.target.text);
-    this.selctedHour = val.target.text;
+
+    this.selctedHour[i] = val.target.text;
     this.createdArray[i].hours = val.target.text;
-    // console.log(this.createdArray)
+    this.checking()
+
   }
 
   handlinSubmit() {
-    console.log(this.createdArray)
+    // console.log(this.createdArray)//this.user.id
+    // console.log(this.selectedGames)
+
+    let headers = { "Conetent-Type": "application/json" }
+    let body = {
+      "userId": this.user.id,
+      "totalPrice": this.total,
+      "reservedGame": this.createdArray
+    }
+    this.service.postHistory(body, headers).subscribe(data => {
+      console.log(data)
+    })
+
+
+  }
+
+
+
+
+  checking() {
+    for (let item of this.createdArray) {
+      if (item.hours == "0" || item.date == "0") {
+        return;
+      }
+    }
+
+    if (this.visaNumber.length == 12 && this.visaPassword.length == 4) { this.allowTosubmit = true; }
+
+  }
+
+  gettingvisaNumber(val) {
+    this.visaNumber = val.target.value;
+    this.checking()
+  }
+
+
+  gettingvisaPassword(val) {
+    this.visaPassword = val.target.value;
+    this.checking()
   }
 }

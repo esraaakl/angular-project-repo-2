@@ -8,21 +8,28 @@ import { PlacesService } from "../places.service"
 })
 export class OptionsComponent implements OnInit {
   @Input() i: any;
+
   count = 0;
   totalOfOneGame = 0;
   total;
   operation;
+  fixBug = false;
 
 
-  constructor(private service: PlacesService) { }
+  constructor(private service: PlacesService) {
+    this.service.counter = 0;
+    this.service.arrOfGames = [];
+  }
 
   ngOnInit() {
+
   }
 
   removingOption(price, i) {
     if (this.count != 0) {
       this.count--;
       this.operation = false;
+      this.fixBug = true;
       this.addingToCart(this.operation, price, i)
       // console.log(i);
     }
@@ -31,8 +38,13 @@ export class OptionsComponent implements OnInit {
 
   addingOption(price, i) {
     if (this.count < 10) {
+
+
       this.count++;
       this.operation = true;
+
+
+
       this.addingToCart(this.operation, price, i)
       // console.log(i);
     }
@@ -42,9 +54,6 @@ export class OptionsComponent implements OnInit {
     this.totalOfOneGame = price * this.count;
     let p: number = price * 1;
     this.service.goT0Service(operation, p, i, this.count);
-
-
-
   }
 
 

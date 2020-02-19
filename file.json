@@ -104,6 +104,17 @@
       "history": [],
       "visa": 0,
       "id": 10
+    },
+    {
+      "name": "samaaaa",
+      "email": "sama@gmail.com",
+      "password": "1234Aa@",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 11
     }
   ],
   "categories": [
@@ -1437,5 +1448,74 @@
       "id": 7
     }
   ],
-  "history": []
+  "history": [
+    {
+      "userId": 6,
+      "totalPrice": 80,
+      "reservedGame": [
+        {
+          "id": 22,
+          "name": "ice skatting ",
+          "price": "80",
+          "desc": " Public skating, family sessions, ice events, bar/cafe offering hot drinks, Figure Skating School, private lessons",
+          "count": 1,
+          "placeId": "6",
+          "img": "",
+          "hours": "7-10",
+          "date": "2020-02-04"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "totalPrice": 200,
+      "reservedGame": [
+        {
+          "id": 38,
+          "name": "bowling",
+          "price": "50",
+          "desc": " For all bowling lovers in alexandria.",
+          "count": 1,
+          "placeId": "1",
+          "img": "",
+          "hours": "7-10",
+          "date": "2020-02-04"
+        },
+        {
+          "id": 39,
+          "name": "bing",
+          "price": "50",
+          "desc": " Spin and Smash Table Tennis & Ping Pong Center",
+          "count": 2,
+          "placeId": "1",
+          "img": "",
+          "hours": "4-6",
+          "date": "2020-02-06"
+        },
+        {
+          "id": 40,
+          "name": "billiards",
+          "price": "60",
+          "desc": " Spin and Smash Table Tennis & Ping Pong Center",
+          "count": 6,
+          "placeId": "1",
+          "img": "",
+          "hours": "4-6",
+          "date": "2020-02-07"
+        },
+        {
+          "id": 43,
+          "name": "africano trip",
+          "price": "200",
+          "desc": " Most of the landscapes and their accompanying plants and animals in a national park are kept in their natural state..",
+          "count": 1,
+          "placeId": "1",
+          "img": "",
+          "hours": "7-10",
+          "date": "2020-02-08"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }

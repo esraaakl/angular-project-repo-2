@@ -8,8 +8,12 @@ import { throws } from 'assert';
 
 export class PlacesService {
   total: any = 0;
+  counter = 0;
   private totalServiceBehavior = new BehaviorSubject(0);
   totalService = this.totalServiceBehavior.asObservable();
+
+  private totalGameServiceBehavior = new BehaviorSubject(0);
+  totalGameService = this.totalServiceBehavior.asObservable();
 
   arrOfGames = []
   set0fgames;
@@ -17,10 +21,18 @@ export class PlacesService {
 
   constructor() { }
 
+  goToSeriveToClearTotal(totalSingleGame) {
+    this.totalGameServiceBehavior.next(totalSingleGame)
+  }
+
   goT0Service(operation, price, i, count) {
+    if (this.counter == 0) {
+      this.total = 0;
+    }
+    this.counter++;
+
     if (operation == true) {
       this.total += price;
-
     }
     else {
       this.total -= price;
@@ -35,6 +47,7 @@ export class PlacesService {
       for (let j = 0; j < this.arrOfGames.length; j++)
         if (i == this.arrOfGames[j]) {
           this.arrOfGames.splice(j, 1)
+
         }
     }
     console.log("heeeeey")
