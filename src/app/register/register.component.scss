@@ -1,13 +1,11 @@
+@import './../../styles.scss';
 .login {
-    margin-top: 56px;
-    figure {
-      height: 120vh;
-      img {
-        max-height: 100%;
-      }
+    .form-group {
+        margin-top: 10%;
     }
-  }
-  .form-wrapper {
+}
+
+.form-wrapper {
     background-color: #111;
     height: 100vh;
     background-size: 100% 100%;
@@ -15,13 +13,14 @@
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-  }
-  
-  .logo {
+}
+
+.logo {
     color: #ffa21d;
     margin-top: 0;
-  }
-  form {
+}
+
+form {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -29,19 +28,21 @@
     height: 80%;
     width: 80%;
     margin: 0 auto;
-  }
-  .email,
-  .password,
-  .name,
-  .confirmpass {
+}
+
+.email,
+.password,
+.name,
+.confirmpass {
     display: flex;
     flex-flow: column;
     border-bottom: 1px solid #999;
-  }
-  .email input,
-  .password input,
-  .name input,
-  .confirmpass input {
+}
+
+.email input,
+.password input,
+.name input,
+.confirmpass input {
     border: none;
     background: none;
     padding: 10px;
@@ -49,11 +50,12 @@
     width: 100%;
     padding-left: 0;
     padding-top: 0;
-  }
-  .email label,
-  .password label,
-  .name label,
-  .confirmpass label {
+}
+
+.email label,
+.password label,
+.name label,
+.confirmpass label {
     text-align: left;
     color: #999;
     font-size: 1rem;
@@ -61,26 +63,30 @@
     margin-bottom: 0;
     margin-top: 10px;
     font-weight: bold;
-  }
-  input::placeholder {
+}
+
+input::placeholder {
     text-transform: capitalize;
     font-size: 0.8rem;
-  }
-  
-  .checkbox {
+}
+
+.checkbox {
     display: flex;
     align-items: center;
-  }
-  .checkbox input {
+}
+
+.checkbox input {
     background-color: #999;
-  }
-  .checkbox label {
+}
+
+.checkbox label {
     margin: 0;
     padding-left: 15px;
     color: #999;
     font-size: 0.8rem;
-  }
-  button {
+}
+
+button {
     border: none;
     padding: 10px 40px;
     border-radius: 30px;
@@ -88,18 +94,19 @@
     align-content: center;
     color: #111111;
     text-transform: capitalize;
-  }
-  .loginbtn {
+}
+
+.loginbtn {
     font-size: 12px;
     text-transform: capitalize;
-  }
-  
-  .loginbtn span {
+}
+
+.loginbtn span {
     color: #ffa21d;
-  }
-  @media (max-width: 500px) {
-      .loginimg {
+}
+
+@media (max-width: 500px) {
+    .loginimg {
         display: none;
     }
-  }
-  
+}
