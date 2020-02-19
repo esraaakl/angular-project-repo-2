@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators, NgForm } from '@angular/forms';
+import { HttpServiceService } from '../http-service.service';
+
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-weekend',
@@ -6,10 +11,37 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weekend.component.scss']
 })
 export class WeekendComponent implements OnInit {
+  holidayForm: FormGroup;
+  userObj;
+  user=[];
 
-  constructor() { }
+  constructor(private formBuilder: FormBuilder , private http:HttpServiceService) { }
 
   ngOnInit() {
-  }
+    this.holidayForm = this.formBuilder.group({
+      time: ['', Validators.required],
+      date: ['', Validators.required],
+      email: ['', [Validators.required, Validators.pattern(/^[a-z]\w{1,}@[a-z]{1,}.com$/)]],
+      password: ['', [Validators.required, Validators.pattern(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{5,}$/)]],
+      confirmPassword: ['', [Validators.required, Validators.pattern(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{5,}$/)]]
+    })
+    
+    
 
+    
+   this.user.push(this.http.getData("user"))
+   console.log(this.user);
+   
+   $('#notSend').click(function(){
+     $('.email').css("display","block")
+   })
+   $('#send').click(function(){
+    $('.email').css("display","none")
+  })
+
+
+  }
+  onSubmit(form){
+
+  }
 }
