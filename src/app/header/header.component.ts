@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PlacesService } from '../places.service';
 import { HttpServiceService } from '../http-service.service'
 import { Router } from '@angular/router';
-import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-header',
@@ -53,10 +53,6 @@ export class HeaderComponent implements OnInit {
     // this.cats=this.placeService.obj.categories;
     this.httpService.headerProfile.subscribe(data => { ///object behavior
       this.headerLoggedin = data;
-    })
-
-     $('#searchBtn').click(function(){
-      $('.form-control').toggle()
     })
 
   }

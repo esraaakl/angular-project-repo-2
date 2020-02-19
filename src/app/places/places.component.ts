@@ -24,6 +24,10 @@ export class PlacesComponent implements OnInit {
   favs;
   user;
   spesifcFavId;
+  loggin;
+  // ........................///
+  finalTotal;
+
 
   constructor(private route: ActivatedRoute, private placeService: PlacesService, private httpService: HttpServiceService, private router: Router) {
 
@@ -56,8 +60,36 @@ export class PlacesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.placeService.totalService.subscribe(data => {
+      this.finalTotal = data;
+    })
+  }
+
+
+
+  savingSelectedGames() {
+    console.log("heeeeeeeeeeeello");
+    console.log(this.placeService.arrOfGames)
+    this.loggin = this.httpService.getData("loggedin");
+    if (this.loggin == true) {
+      if (this.finalTotal != 0) {
+        this.httpService.setData("finalTotal", this.finalTotal)
+        this.httpService.setData("choosenGames", this.placeService.arrOfGames);
+        this.router.navigate(["/reservation/FoYalaaPayment"])
+
+
+      }
+    }
+    else {
+      alert("you have to register");
+      this.router.navigate(["/register"])
+    }
 
   }
+
+
+
+
 
   gettingSpesificOfFavs() {
     //  awl ma render el page bayshof hawa mawgod wala la?
@@ -167,5 +199,8 @@ export class PlacesComponent implements OnInit {
       this.router.navigate(["/register"])
     }
   }
+
+
+
 
 }

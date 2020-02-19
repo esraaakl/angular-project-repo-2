@@ -82,6 +82,28 @@
       "history": [],
       "visa": 0,
       "id": 8
+    },
+    {
+      "name": "esraaa",
+      "email": "esraaaa@gmail.com",
+      "password": "1234Aa@",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 9
+    },
+    {
+      "name": "sara",
+      "email": "sara@gmail.com",
+      "password": "1234Aa@",
+      "image": "",
+      "rate": 1,
+      "favourites": [],
+      "history": [],
+      "visa": 0,
+      "id": 10
     }
   ],
   "categories": [
@@ -1316,6 +1338,42 @@
       "rate": 4,
       "saraaa": 2,
       "id": 4
+    },
+    {
+      "comment": "esraaaaaaaaaaa",
+      "placeId": "6",
+      "userName": "esraaa",
+      "userImg": "",
+      "rate": 5,
+      "saraaa": 2,
+      "id": 5
+    },
+    {
+      "comment": "kqkwgkqgyjqef",
+      "placeId": "6",
+      "userName": "esraaa",
+      "userImg": "",
+      "rate": 5,
+      "saraaa": 2,
+      "id": 6
+    },
+    {
+      "comment": "",
+      "placeId": "6",
+      "userName": "esraaa",
+      "userImg": "",
+      "rate": 5,
+      "saraaa": 2,
+      "id": 7
+    },
+    {
+      "comment": "saraaaaaaaa",
+      "placeId": "6",
+      "userName": "sara",
+      "userImg": "",
+      "rate": 3,
+      "saraaa": 2,
+      "id": 8
     }
   ],
   "rates": [
@@ -1336,6 +1394,21 @@
       "placeId": "3",
       "userId": 6,
       "id": 3
+    },
+    {
+      "value": 5,
+      "placeId": "4",
+      "id": 4
+    },
+    {
+      "value": 5,
+      "placeId": "6",
+      "id": 5
+    },
+    {
+      "value": 3,
+      "placeId": "6",
+      "id": 6
     }
   ],
   "favourites": [

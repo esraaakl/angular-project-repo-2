@@ -1,10 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
-
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +18,10 @@ import { RatesComponent } from './rates/rates.component';
 import { NOTFOUNDComponent } from './notfound/notfound.component';
 import { PlacesComponent } from './places/places.component';
 import { WeekendComponent } from './weekend/weekend.component';
+import { FilterPipe } from './filter.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { OptionsComponent } from './options/options.component';///////sign i
+
 
 @NgModule({
   declarations: [
@@ -40,16 +40,15 @@ import { WeekendComponent } from './weekend/weekend.component';
     NOTFOUNDComponent,
     PlacesComponent,
     WeekendComponent,
+    FilterPipe,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    CarouselModule,
-    ReactiveFormsModule 
-
-
+    ReactiveFormsModule ////sign in
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

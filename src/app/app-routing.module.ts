@@ -9,20 +9,18 @@ import { NOTFOUNDComponent } from './notfound/notfound.component';
 import { PlacesComponent } from './places/places.component';
 import { WeekendComponent } from './weekend/weekend.component';
 import { ReservationComponent } from './reservation/reservation.component';
-import { UserProfileComponent } from './user-profile/user-profile.component';
 
 
 const routes: Routes = [
-  {path:"", component: HomeComponent},
-  {path:"events", component: AboutUsComponent},
-  {path:"Weekend", component: WeekendComponent},
-  {path:"cat/:id", component: SingleCategoryComponent},
-  {path:"register", component: RegisterComponent},
-  {path:"login", component: LoginComponent},
-  {path:"place/:id", component: PlacesComponent},
-  {path:"user-profile",component:UserProfileComponent},
-  {path:"reservation/:id", component:  ReservationComponent},
-  {path:"**", component: NOTFOUNDComponent}
+  { path: "", component: HomeComponent },
+  { path: "events", component: AboutUsComponent },
+  { path: "Weekend", component: WeekendComponent },
+  { path: "cat/:id", component: SingleCategoryComponent },
+  { path: "register", component: RegisterComponent },
+  { path: "login", component: LoginComponent },
+  { path: "place/:id", component: PlacesComponent },
+  { path: "reservation/:id", component: ReservationComponent },
+  { path: "**", component: NOTFOUNDComponent }
 
 ];
 

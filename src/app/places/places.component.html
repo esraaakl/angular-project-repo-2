@@ -112,14 +112,20 @@
   <app-comments></app-comments>
 
 
+  <button class="btn btn-danger" (click)="savingSelectedGames()">
+    Go to Payment
+  </button>
   <div class="container">
+    <h1 style="border: 1px red solid;">
+      {{finalTotal}}
+    </h1>
     <div class="row">
       <div class="m-md-2 col-md-3" style="border: 2px solid pink; border-radius: 30px;"
-        *ngFor="let i of optionsOfSpesificPlace">
-        {{i.name}}-{{i.price}}
-        <hr>
-        {{i.desc}}
+        *ngFor="let Option of optionsOfSpesificPlace">
+        <app-options [i]="Option"></app-options>
+
       </div>
+
 
     </div>
   </div>
