@@ -18,6 +18,9 @@ export class HttpServiceService {
   constructor(private http: HttpClient) { }
 
 
+  postComments(body, header) {
+    return this.http.post("http://localhost:3000/comments", body, header)
+  }
 
   gettingData() {
     return this.http.get("http://localhost:3000/categories");
@@ -36,6 +39,36 @@ export class HttpServiceService {
 
   getSingleCategory(id) {
     return this.http.get("http://localhost:3000/categories/" + id);
+  }
+
+
+  getComments() {
+    return this.http.get("http://localhost:3000/comments")
+  }
+
+  getRates() {
+    return this.http.get("http://localhost:3000/rates");
+  }
+  // id bata3 object el fav nfso??
+
+  getFav() {
+    return this.http.get("http://localhost:3000/favourites");
+  }
+
+  deleteFav(id) {
+    return this.http.delete("http://localhost:3000/favourites/" + id)
+  }
+
+  postFav(body, headers) {
+    return this.http.post("http://localhost:3000/favourites", body, headers);
+  }
+
+  postComment(body, headers) {
+    return this.http.post("http://localhost:3000/comments", body, headers);
+  }
+
+  postRate(body, headers) {
+    return this.http.post("http://localhost:3000/rates", body, headers);
   }
 
 

@@ -48,7 +48,7 @@ export class SingleCategoryComponent implements OnInit {
 
     this.route.params.subscribe((param: Params) => {
       this.singleCatId = param["id"];
-      console.log("heeeeee" + typeof (+this.singleCatId))
+      // console.log("heeeeee" + typeof (+this.singleCatId))
 
 
       this.httpService.gettingData().subscribe(
@@ -64,9 +64,9 @@ export class SingleCategoryComponent implements OnInit {
         data => {
           this.repetedLocatins = [];
           this.places = data;
-          console.log(this.places)
+          // console.log(this.places)
           this.singleSelecetedPlaces = this.getPlacesOfSingleCat(this.singleCatId);
-          console.log(this.singleSelecetedPlaces)
+          // console.log(this.singleSelecetedPlaces)
 
           for (let i of this.singleSelecetedPlaces) {
             this.repetedLocatins.push(i.location);
@@ -75,11 +75,11 @@ export class SingleCategoryComponent implements OnInit {
           for (let i of this.uniqe) {
             setTimeout(() => {
               this.id = document.getElementById(i);
-              console.log("ssssssssssssssssssssssssssss")
+              // console.log("ssssssssssssssssssssssssssss")
               this.arrOfLocations.push(this.id)
             }, 2000)
           }
-          console.log(this.arrOfLocations)
+          // console.log(this.arrOfLocations)
 
         }
       )
@@ -103,16 +103,10 @@ export class SingleCategoryComponent implements OnInit {
 
   }
 
-
-
-
   handling2(param) {
-    console.log(param.checked)
-    console.log(param.value)
-    console.log(param)
-
-
-
+    // console.log(param.checked)
+    // console.log(param.value)
+    // console.log(param)
   }
 
   handling(reservation, status, kidfriendly, one, two, three, four, five) {
@@ -124,7 +118,7 @@ export class SingleCategoryComponent implements OnInit {
 
     this.check = true;
     this.filteredData = [];
-    console.log('changed')
+    // console.log('changed')
     for (let place of this.singleSelecetedPlaces) {
 
       if (this.ratingChecked(place) &&
@@ -172,7 +166,6 @@ export class SingleCategoryComponent implements OnInit {
       if (place.avgrate == i) {
         return true;
       }
-
     }
   }
 

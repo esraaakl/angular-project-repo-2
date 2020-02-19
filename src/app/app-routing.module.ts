@@ -12,15 +12,15 @@ import { ReservationComponent } from './reservation/reservation.component';
 
 
 const routes: Routes = [
-  {path:"", component: HomeComponent},
-  {path:"events", component: AboutUsComponent},
-  {path:"Weekend", component: WeekendComponent},
-  {path:"cat/:id", component: SingleCategoryComponent},
-  {path:"register", component: RegisterComponent},
-  {path:"login", component: LoginComponent},
-  {path:"place/:id", component: PlacesComponent},
-  {path:"reservation/:id", component:  ReservationComponent},
-  {path:"**", component: NOTFOUNDComponent}
+  { path: "", component: HomeComponent },
+  { path: "events", component: AboutUsComponent },
+  { path: "Weekend", component: WeekendComponent },
+  { path: "cat/:id", component: SingleCategoryComponent },
+  { path: "register", component: RegisterComponent },
+  { path: "login", component: LoginComponent },
+  { path: "place/:id", component: PlacesComponent },
+  { path: "reservation/:id", component: ReservationComponent },
+  { path: "**", component: NOTFOUNDComponent }
 
 ];
 

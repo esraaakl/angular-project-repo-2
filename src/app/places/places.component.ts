@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { PlacesService } from '../places.service';
 import { HttpServiceService } from '../http-service.service'
 
+
 @Component({
   selector: 'app-places',
   templateUrl: './places.component.html',
@@ -18,11 +19,21 @@ export class PlacesComponent implements OnInit {
   placeLoggedin;
   options;
   optionsOfSpesificPlace = [];
+  // ..................//
+  checkFav: boolean = false;
+  favs;
+  user;
+  spesifcFavId;
+  loggin;
+  // ........................///
+  finalTotal;
+
+
   constructor(private route: ActivatedRoute, private placeService: PlacesService, private httpService: HttpServiceService, private router: Router) {
 
     this.route.params.subscribe((param: Params) => {
       this.singlePlaceId = param["id"];
-
+      this.user = this.httpService.getData("user");
 
       this.httpService.gettingPlaces().subscribe(
 
@@ -38,13 +49,64 @@ export class PlacesComponent implements OnInit {
         this.gettingSpesifcOptions(this.singlePlaceId)
       })
 
+      this.httpService.getFav().subscribe(data => {
+        this.favs = data;
+        this.gettingSpesificOfFavs()
+      })
+
+
     })
     this.placeLoggedin = this.httpService.getData("loggedin");
   }
 
   ngOnInit() {
+    this.placeService.totalService.subscribe(data => {
+      this.finalTotal = data;
+    })
+  }
+
+
+
+  savingSelectedGames() {
+    console.log("heeeeeeeeeeeello");
+    console.log(this.placeService.arrOfGames)
+    this.loggin = this.httpService.getData("loggedin");
+    if (this.loggin == true) {
+      if (this.finalTotal != 0) {
+        this.httpService.setData("finalTotal", this.finalTotal)
+        this.httpService.setData("choosenGames", this.placeService.arrOfGames);
+        this.router.navigate(["/reservation/FoYalaaPayment"])
+
+
+      }
+    }
+    else {
+      alert("you have to register");
+      this.router.navigate(["/register"])
+    }
 
   }
+
+
+
+
+
+  gettingSpesificOfFavs() {
+    //  awl ma render el page bayshof hawa mawgod wala la?
+    for (let fav of this.favs) {
+      // console.log("na gawaaaaa el for")
+      if (fav.placeId == this.singlePlaceId && fav.userId == this.user.id) {
+        this.checkFav = true;
+        this.spesifcFavId = fav.id;
+        // console.log("na gawaaaaa el if")
+        // lw mawgod hasglha fi el local storge lw msh mwgod 5alas
+        this.httpService.setData("favid", this.spesifcFavId);
+        break;
+      }
+    }
+
+  }
+
   gettingSpesifcOptions(id) {
     for (let option of this.options) {
       if (option.placeId == id) {
@@ -73,5 +135,72 @@ export class PlacesComponent implements OnInit {
 
     return this.singlePlace;
   }
+
+
+  checkingFavs() {
+
+    if (this.checkFav == true) {
+      this.RemoveFromFavs()
+    }
+    else {
+      this.addToFavs()
+    }
+  }
+
+
+
+  RemoveFromFavs() {
+    this.placeLoggedin = this.httpService.getData("loggedin");
+    if (this.placeLoggedin == true) {
+      this.checkFav = false;
+      // console.log("22222222222222222")
+      this.spesifcFavId = this.httpService.getData("favid")
+      this.httpService.deleteFav(this.spesifcFavId).subscribe(data => {
+        // console.log("deleted")
+      })
+
+    }
+
+    else {
+      alert("you have to register")
+      this.router.navigate(["/register"])
+    }
+
+  }
+
+
+  addToFavs() {
+    this.placeLoggedin = this.httpService.getData("loggedin");
+
+    if (this.placeLoggedin == true) {
+      let headers = { "Conetent-Type": "application/json" }
+      let body = {
+        "placeId": this.singlePlaceId,
+        "userId": this.user.id
+      }
+      this.httpService.postFav(body, headers).subscribe(
+        data => {
+          // console.log(data)
+          this.checkFav = true;
+          // this.gettingSpesificOfFavs()
+          this.httpService.getFav().subscribe(data => {
+            this.favs = data;
+            this.gettingSpesificOfFavs()
+          })
+
+
+          // console.log("1111111111111111111111111")
+
+        }
+      )
+    }
+    else {
+      alert("you have to register")
+      this.router.navigate(["/register"])
+    }
+  }
+
+
+
 
 }

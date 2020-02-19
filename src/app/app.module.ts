@@ -19,7 +19,8 @@ import { NOTFOUNDComponent } from './notfound/notfound.component';
 import { PlacesComponent } from './places/places.component';
 import { WeekendComponent } from './weekend/weekend.component';
 import { FilterPipe } from './filter.pipe';
-import { ReactiveFormsModule } from '@angular/forms';///////sign i
+import { ReactiveFormsModule } from '@angular/forms';
+import { OptionsComponent } from './options/options.component';///////sign i
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';///////sign i
     NOTFOUNDComponent,
     PlacesComponent,
     WeekendComponent,
-    FilterPipe
+    FilterPipe,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,

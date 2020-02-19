@@ -2,63 +2,58 @@
   "users": [
     {
       "id": 1,
-      "name": "samaaaaaa",
+      "fName": "hend",
+      "lName": "diab",
       "email": "henddiab132@gmail.com",
-      "password": "Aa!1234567",
+      "password": "1234",
       "image": "",
       "rate": 1,
-      "favourites": [],
-      "history": [],
       "visa": 0
     },
     {
       "id": 2,
-      "name": "esraa akl",
+      "fName": "samaa",
+      "lName": "amin",
       "email": "samaa@gmail.com",
       "password": "12345",
       "image": "",
       "rate": 1,
-      "favourites": [],
-      "history": [],
       "visa": 0
     },
     {
       "id": 3,
-      "name": "sarah sherif",
+      "fName": "sara",
+      "lName": "shreeeeeeeeeeif",
       "email": "sara@yahoo.com",
       "password": "123456",
       "image": "",
       "rate": 1,
-      "favourites": [],
-      "history": [],
       "visa": 0
     },
     {
       "id": 4,
-      "name": "hend",
+      "fName": "esraa",
+      "lName": "akl",
       "email": "esraa@yahoo.com",
       "password": "123455",
       "image": "",
       "rate": 1,
-      "favourites": [],
-      "history": [],
       "visa": 0
     },
     {
       "id": 5,
-      "name": "mohamed",
+      "fName": "mohamed",
+      "lName": "adel",
       "email": "madel@yahoo.com",
       "password": "1234556",
       "image": "",
       "rate": 1,
-      "favourites": [],
-      "history": [],
       "visa": 0
     },
     {
-      "name": "esraaaaa",
-      "email": "shefffaa2testf@gmail.com",
-      "password": "aA!12345",
+      "name": "esraa",
+      "email": "esraa@gmail.com",
+      "password": "1234Aa@",
       "image": "",
       "rate": 1,
       "favourites": [],
@@ -67,9 +62,9 @@
       "id": 6
     },
     {
-      "name": "hagaaaaaaar",
-      "email": "shefaa2testf@gmail.com",
-      "password": "aA!123456",
+      "name": "sss",
+      "email": "esraaa@gmail.com",
+      "password": "1234Aa@",
       "image": "",
       "rate": 1,
       "favourites": [],
@@ -78,9 +73,9 @@
       "id": 7
     },
     {
-      "name": "hend",
-      "email": "samaaamin@yahoo.com",
-      "password": "aA!123456",
+      "name": "samaa",
+      "email": "samaa@dsfgh.com",
+      "password": "123aA!",
       "image": "",
       "rate": 1,
       "favourites": [],
@@ -89,9 +84,9 @@
       "id": 8
     },
     {
-      "name": "samaaaaa",
-      "email": "dfghfghj@yahoo.com",
-      "password": "aA!123456",
+      "name": "esraaa",
+      "email": "esraaaa@gmail.com",
+      "password": "1234Aa@",
       "image": "",
       "rate": 1,
       "favourites": [],
@@ -100,26 +95,15 @@
       "id": 9
     },
     {
-      "name": "kk,mnbfvd",
-      "email": "shefaa254sfdgfhkllf@gmail.com",
-      "password": "aA!123456",
+      "name": "sara",
+      "email": "sara@gmail.com",
+      "password": "1234Aa@",
       "image": "",
       "rate": 1,
       "favourites": [],
       "history": [],
       "visa": 0,
       "id": 10
-    },
-    {
-      "name": "esraa",
-      "email": "esraa@gmaisssl.com",
-      "password": "1aA@@@",
-      "image": "",
-      "rate": 1,
-      "favourites": [],
-      "history": [],
-      "visa": 0,
-      "id": 11
     }
   ],
   "categories": [
@@ -255,13 +239,19 @@
           "value": 5
         }
       ],
+      "paymentMethod": "Ticket",
       "avgrate": 5,
-      "main-image": "",
-      "imgs": [],
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
       "status": "closed",
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -298,12 +288,18 @@
         }
       ],
       "avgrate": 3,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -341,12 +337,18 @@
         }
       ],
       "avgrate": 4,
-      "main-image": "",
-      "imgs": "",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
       "status": "closed",
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
       "reservation": "true",
       "kid-friendly": "true",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -388,12 +390,18 @@
         }
       ],
       "avgrate": 2,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "true",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -434,12 +442,18 @@
         }
       ],
       "avgrate": 5,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "true",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -469,12 +483,18 @@
         }
       ],
       "avgrate": 4,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "true",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -518,12 +538,18 @@
         }
       ],
       "avgrate": 4,
-      "main-image": "",
-      "imgs": "",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
       "status": "closed",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -567,12 +593,18 @@
         }
       ],
       "avgrate": 4,
-      "main-image": "",
-      "imgs": "",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
       "status": "closed",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -617,12 +649,18 @@
         }
       ],
       "avgrate": 3,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -670,12 +708,18 @@
         }
       ],
       "avgrate": 5,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Africa Safari Park is the first safari park in Egypt that provides everyone a chance to live an adventurous & daring experience.",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -721,12 +765,18 @@
         }
       ],
       "avgrate": 3,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Montaza Palace is a palace, museum and extensive gardens in the Montaza district of Alexandria, Egypt. It was built on a low plateau east of central Alexandria overlooking a beach on the Mediterranean Sea",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -770,12 +820,18 @@
         }
       ],
       "avgrate": 2,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Montaza Palace is a palace, museum and extensive gardens in the Montaza district of Alexandria, Egypt. It was built on a low plateau east of central Alexandria overlooking a beach on the Mediterranean Sea",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -820,12 +876,18 @@
         }
       ],
       "avgrate": 1,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Montaza Palace is a palace, museum and extensive gardens in the Montaza district of Alexandria, Egypt. It was built on a low plateau east of central Alexandria overlooking a beach on the Mediterranean Sea",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -871,12 +933,18 @@
         }
       ],
       "avgrate": 4,
-      "main-image": "",
-      "imgs": "",
-      "status": "open",
+      "paymentMethod": "Ticket",
+      "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
+      "imgs": [
+        "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+      ],
+      "openHours": "11:00 AM - 3:00 AM",
+      "desc": "This Place offers a chance to the most amazing entertainments. this is the place to celebrate! So gather with all the family or friends who make you the happiest and come to have the best experience of fun ever",
+      "status": "open now",
       "reservation": "false",
       "kid-friendly": "false",
-      "desc": "Montaza Palace is a palace, museum and extensive gardens in the Montaza district of Alexandria, Egypt. It was built on a low plateau east of central Alexandria overlooking a beach on the Mediterranean Sea",
       "contact": {
         "phone": "0123456859",
         "facebook": "facebook.com/FourSeasonsHotelAlexandria/",
@@ -1229,5 +1297,145 @@
       "placeId": "1",
       "img": ""
     }
-  ]
+  ],
+  "comments": [
+    {
+      "comment": "gdjasgkf",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "saraaa": 2,
+      "id": 1
+    },
+    {
+      "comment": "gsajdgjD",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "saraaa": 2,
+      "id": 2
+    },
+    {
+      "comment": "HDKAHDFLADF",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "saraaa": 2,
+      "id": 3
+    },
+    {
+      "comment": "GFEWJQFDJFD",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "saraaa": 2,
+      "id": 4
+    },
+    {
+      "comment": "esraaaaaaaaaaa",
+      "placeId": "6",
+      "userName": "esraaa",
+      "userImg": "",
+      "rate": 5,
+      "saraaa": 2,
+      "id": 5
+    },
+    {
+      "comment": "kqkwgkqgyjqef",
+      "placeId": "6",
+      "userName": "esraaa",
+      "userImg": "",
+      "rate": 5,
+      "saraaa": 2,
+      "id": 6
+    },
+    {
+      "comment": "",
+      "placeId": "6",
+      "userName": "esraaa",
+      "userImg": "",
+      "rate": 5,
+      "saraaa": 2,
+      "id": 7
+    },
+    {
+      "comment": "saraaaaaaaa",
+      "placeId": "6",
+      "userName": "sara",
+      "userImg": "",
+      "rate": 3,
+      "saraaa": 2,
+      "id": 8
+    }
+  ],
+  "rates": [
+    {
+      "value": 4,
+      "placeId": "3",
+      "userId": 6,
+      "id": 1
+    },
+    {
+      "value": 4,
+      "placeId": "3",
+      "userId": 6,
+      "id": 2
+    },
+    {
+      "value": 4,
+      "placeId": "3",
+      "userId": 6,
+      "id": 3
+    },
+    {
+      "value": 5,
+      "placeId": "4",
+      "id": 4
+    },
+    {
+      "value": 5,
+      "placeId": "6",
+      "id": 5
+    },
+    {
+      "value": 3,
+      "placeId": "6",
+      "id": 6
+    }
+  ],
+  "favourites": [
+    {
+      "placeId": "2",
+      "userId": 6,
+      "id": 1
+    },
+    {
+      "placeId": "1",
+      "userId": 6,
+      "id": 4
+    },
+    {
+      "placeId": "7",
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "placeId": "1",
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "placeId": "7",
+      "id": 7
+    }
+  ],
+  "history": []
 }

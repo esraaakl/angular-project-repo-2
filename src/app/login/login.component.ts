@@ -1,7 +1,8 @@
-import { Component, OnInit , ViewChild , ElementRef} from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { UsersService } from '../users.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpServiceService } from '../http-service.service';
+import { Router } from '@angular/router';
 
 
 
@@ -16,12 +17,12 @@ export class LoginComponent implements OnInit {
   password;
   myForm: FormGroup;
   users;
-  errorcheck=false;
-  loggedinheader=false;
+  errorcheck = false;
+  loggedinheader = false;
 
-  constructor(private userservice: UsersService ,private fb: FormBuilder , private serviceServer:HttpServiceService) { 
-    this.userservice.gettingUsers().subscribe((data)=>{
-      this.users=data;
+  constructor(private userservice: UsersService, private fb: FormBuilder, private serviceServer: HttpServiceService, private router: Router) {
+    this.userservice.gettingUsers().subscribe((data) => {
+      this.users = data;
     })
   }
 
@@ -33,19 +34,20 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(form: FormGroup) {
-    this.email=this.myForm.controls.email.value;
-    this.password=this.myForm.controls.password.value;
-    for(let i of this.users){
-      if(i.email==this.email && i.password==this.password){
-        this.errorcheck=false;
-        this.serviceServer.setData("user",i)
-        this.serviceServer.setData("loggedin",true)
-        this.loggedinheader=true
+    this.email = this.myForm.controls.email.value;
+    this.password = this.myForm.controls.password.value;
+    for (let i of this.users) {
+      if (i.email == this.email && i.password == this.password) {
+        this.errorcheck = false;
+        this.serviceServer.setData("user", i)
+        this.serviceServer.setData("loggedin", true)
+        this.loggedinheader = true
         this.serviceServer.displayProfileIcon(this.loggedinheader)
-        return i ;
+        this.router.navigate(["/"]);
+        return i;
       }
     }
-    this.errorcheck=true;
+    this.errorcheck = true;
   }
 }
 
