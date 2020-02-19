@@ -25,7 +25,7 @@
                 <div class="email">
                     <input formControlName="email" type="email" class="form-control" name="" id="email" aria-describedby="helpId" placeholder="Email">
                 </div>
-                <button type="submit" class="btn btn-primary col-12">Submit</button>
+                <button type="submit" [disabled]="!holidayForm.valid" class="btn btn-primary col-12">Submit</button>
             </form>
         </div>
         <div class="userName col-6 text-center" *ngFor="let n of user">
