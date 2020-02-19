@@ -1,0 +1,67 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/events">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/Weekend">Weekend</a>
+      </li>
+
+      <li class="nav-item">
+        <ng-template #loggedOut>
+          <a class="nav-link" routerLink="/register">SignUp</a>
+        </ng-template>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a *ngFor="let cat of cats" class="dropdown-item" routerLink="/cat/{{cat.id}}">{{cat.name}}</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Reservations
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a *ngFor="let cat of regesterationCats" class="dropdown-item" routerLink="/cat/{{cat.id}}">{{cat.name}}</a>
+        </div>
+      </li>
+
+      <li>
+        <input #inputSearch class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+          (input)="lookingFor($event)">
+        <ul>
+
+          <a style="display: block;" *ngFor="let data of wanteddata" routerLink="/place/{{data.id}}"
+            (click)="handlingSearch(inputSearch)">{{data.name}}-{{data.id}}</a>
+
+        </ul>
+      </li>
+
+
+
+
+      <li *ngIf="headerLoggedin == true || loggenfromlocalstorage==true ; else loggedOut">
+        <button class="btn btn-danger">profile</button>
+        <button class="btn btn-danger" (click)="loggingOut()">logout</button>
+      </li>
+
+
+
+    </ul>
+  </div>
+</nav>

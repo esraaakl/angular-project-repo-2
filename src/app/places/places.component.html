@@ -1,0 +1,41 @@
+<div class="loading" *ngIf="!singlePlaceData">
+  loading...
+</div>
+<div *ngIf="singlePlaceData ">
+  <div class="container" style="border: 2px red solid ;">
+    <h1>
+      {{singlePlaceData.id}}
+    </h1>
+    <h1>
+      {{singlePlaceData.name}}
+    </h1>
+
+    <h1>
+      {{singlePlaceData.location}}
+    </h1>
+
+    <div>
+
+      <!-- *ngIf="placeLoggedin && placeLoggedin.length!=0" -->
+      <!-- routerLink="/reservation/{{singlePlaceData.id}}" -->
+      <button class="btn btn-danger" *ngIf="singlePlaceData.reservation=='true'"
+        (click)="navigateToReservation()">reservation</button>
+    </div>
+
+    <h4 *ngIf="singlePlaceData.status=='open'">open</h4>
+    <h4 *ngIf="singlePlaceData.status!='open'">close</h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="m-md-2 col-md-3" style="border: 2px solid pink; border-radius: 30px;"
+        *ngFor="let i of optionsOfSpesificPlace">
+        {{i.name}}-{{i.price}}
+        <hr>
+        {{i.desc}}
+      </div>
+
+    </div>
+  </div>
+
+</div>

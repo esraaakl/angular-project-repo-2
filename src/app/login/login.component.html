@@ -1,0 +1,18 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+
+    <input formControlName="email" placeholder="Your email">
+  
+    <!-- <div *ngIf="myForm.controls.email.hasError('pattern')">
+      Oops, wrong pattern buddy!
+    </div> -->
+  
+    <input formControlName="password" placeholder="password">
+  
+    <div *ngIf="errorcheck">
+        invalid email or password
+    </div>
+  
+    <button type="submit" [disabled]="myForm.invalid">
+      log in
+    </button>
+  </form>
