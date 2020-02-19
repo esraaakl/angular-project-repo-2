@@ -63,11 +63,6 @@ export class HttpServiceService {
     return this.http.post("http://localhost:3000/favourites", body, headers);
   }
 
-  postHistory(body, headers) {
-    return this.http.post("http://localhost:3000/history", body, headers);
-  }
-
-
   postComment(body, headers) {
     return this.http.post("http://localhost:3000/comments", body, headers);
   }
