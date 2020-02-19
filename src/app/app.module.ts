@@ -1,4 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http'
 
@@ -47,7 +49,9 @@ import { OptionsComponent } from './options/options.component';///////sign i
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule ////sign in
+    ReactiveFormsModule, ////sign in
+    CarouselModule ,
+    BrowserAnimationsModule 
     
   ],
   providers: [],
