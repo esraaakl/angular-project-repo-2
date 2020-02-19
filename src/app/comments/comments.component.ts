@@ -15,9 +15,19 @@ export class CommentsComponent implements OnInit {
   showedComments = [];
   singlePlaceId;
   placeLoggedin;
+  // for star rates
+  arrRates = [1, 2, 3, 4, 5];
+  arrsecRates = [1, 2, 3, 4];
+  arrthirdRates = [1, 2, 3];
+  arrfourthRates = [1, 2];
+  arrfifthRates = [1];
+
   // .......
   rates;
   SpesificRate;
+  SpesificRateArr;
+
+
 
   constructor(private route: ActivatedRoute, private placeService: PlacesService, private httpService: HttpServiceService, private router: Router) {
     this.route.params.subscribe((param: Params) => {
@@ -28,6 +38,7 @@ export class CommentsComponent implements OnInit {
       this.httpService.getComments().subscribe(data => {
         this.comments = data;
         this.gettingCommentsOfSinglePlace(this.singlePlaceId)
+       
 
       })
 
@@ -39,8 +50,9 @@ export class CommentsComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ 
   addComment(param) {
+    
     this.placeLoggedin = this.httpService.getData("loggedin");
     if (this.placeLoggedin == true) {
       let user;
@@ -54,11 +66,22 @@ export class CommentsComponent implements OnInit {
           console.log(rate, rate.placeId, this.singlePlaceId, rate.userId, user.id)
           if (rate.placeId == this.singlePlaceId && rate.userId == user.id) {
             this.SpesificRate = rate.value;
-
+            this.SpesificRateArr=rate.arrOfVals;
+            console.log(rate.value)
+          
           }
         }
+        console.log(this.SpesificRate)
+        // for(let i=0; i<this.SpesificRate ;i++){
+        //   this.dumyarray.push(i)
+          
+        // }
+
       })
       // .......
+
+
+
       setTimeout(() => {
 
 
@@ -70,7 +93,7 @@ export class CommentsComponent implements OnInit {
           "userName": user.name,
           "userImg": "",
           "rate": this.SpesificRate,
-          "saraaa": 2
+          "arrOfRate": this.SpesificRateArr
         }
 
         this.httpService.postComments(body, headers).subscribe(data => {

@@ -1,56 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "fName": "hend",
-      "lName": "diab",
-      "email": "henddiab132@gmail.com",
-      "password": "1234",
-      "image": "",
-      "rate": 1,
-      "visa": 0
-    },
-    {
-      "id": 2,
-      "fName": "samaa",
-      "lName": "amin",
-      "email": "samaa@gmail.com",
-      "password": "12345",
-      "image": "",
-      "rate": 1,
-      "visa": 0
-    },
-    {
-      "id": 3,
-      "fName": "sara",
-      "lName": "shreeeeeeeeeeif",
-      "email": "sara@yahoo.com",
-      "password": "123456",
-      "image": "",
-      "rate": 1,
-      "visa": 0
-    },
-    {
-      "id": 4,
-      "fName": "esraa",
-      "lName": "akl",
-      "email": "esraa@yahoo.com",
-      "password": "123455",
-      "image": "",
-      "rate": 1,
-      "visa": 0
-    },
-    {
-      "id": 5,
-      "fName": "mohamed",
-      "lName": "adel",
-      "email": "madel@yahoo.com",
-      "password": "1234556",
-      "image": "",
-      "rate": 1,
-      "visa": 0
-    },
-    {
       "name": "esraa",
       "email": "esraa@gmail.com",
       "password": "1234Aa@",
@@ -62,18 +12,7 @@
       "id": 6
     },
     {
-      "name": "sss",
-      "email": "esraaa@gmail.com",
-      "password": "1234Aa@",
-      "image": "",
-      "rate": 1,
-      "favourites": [],
-      "history": [],
-      "visa": 0,
-      "id": 7
-    },
-    {
-      "name": "samaa",
+      "name": "samaa amin",
       "email": "samaa@dsfgh.com",
       "password": "123aA!",
       "image": "",
@@ -84,37 +23,15 @@
       "id": 8
     },
     {
-      "name": "esraaa",
-      "email": "esraaaa@gmail.com",
-      "password": "1234Aa@",
+      "name": "sara sherif",
+      "email": "sarasherif63@yahoo.com",
+      "password": "1234qweQ!",
       "image": "",
       "rate": 1,
       "favourites": [],
       "history": [],
       "visa": 0,
       "id": 9
-    },
-    {
-      "name": "sara",
-      "email": "sara@gmail.com",
-      "password": "1234Aa@",
-      "image": "",
-      "rate": 1,
-      "favourites": [],
-      "history": [],
-      "visa": 0,
-      "id": 10
-    },
-    {
-      "name": "samaaaa",
-      "email": "sama@gmail.com",
-      "password": "1234Aa@",
-      "image": "",
-      "rate": 1,
-      "favourites": [],
-      "history": [],
-      "visa": 0,
-      "id": 11
     }
   ],
   "categories": [
@@ -352,7 +269,7 @@
       "mainImage": "https://i.postimg.cc/R0rZrN8d/Kouta-Park.png",
       "imgs": [
         "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
-        "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+        "https://i.postimg.cc/qqQDvLNN/71651163-3026233807391152-2258242780025323520-o-3x.png",
         "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
       ],
       "status": "closed",
@@ -1311,115 +1228,323 @@
   ],
   "comments": [
     {
-      "comment": "gdjasgkf",
-      "placeId": "3",
+      "comment": "good place ",
+      "placeId": "1",
       "userId": 6,
       "userName": "esraa",
       "userImg": "",
       "rate": 4,
-      "saraaa": 2,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
       "id": 1
     },
     {
-      "comment": "gsajdgjD",
-      "placeId": "3",
+      "comment": "",
+      "placeId": "1",
       "userId": 6,
       "userName": "esraa",
       "userImg": "",
-      "rate": 4,
-      "saraaa": 2,
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
       "id": 2
     },
     {
-      "comment": "HDKAHDFLADF",
+      "comment": "good place ",
       "placeId": "3",
       "userId": 6,
       "userName": "esraa",
       "userImg": "",
       "rate": 4,
-      "saraaa": 2,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
       "id": 3
     },
     {
-      "comment": "GFEWJQFDJFD",
+      "comment": "ana samaaaaaa",
       "placeId": "3",
       "userId": 6,
       "userName": "esraa",
       "userImg": "",
       "rate": 4,
-      "saraaa": 2,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
       "id": 4
     },
     {
-      "comment": "esraaaaaaaaaaa",
-      "placeId": "6",
-      "userName": "esraaa",
+      "comment": "",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
       "userImg": "",
-      "rate": 5,
-      "saraaa": 2,
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
       "id": 5
     },
     {
-      "comment": "kqkwgkqgyjqef",
-      "placeId": "6",
-      "userName": "esraaa",
+      "comment": "ana esraaa",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
       "userImg": "",
-      "rate": 5,
-      "saraaa": 2,
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
       "id": 6
     },
     {
       "comment": "",
-      "placeId": "6",
-      "userName": "esraaa",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
       "userImg": "",
-      "rate": 5,
-      "saraaa": 2,
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
       "id": 7
     },
     {
-      "comment": "saraaaaaaaa",
-      "placeId": "6",
-      "userName": "sara",
+      "comment": "",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
       "userImg": "",
-      "rate": 3,
-      "saraaa": 2,
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
       "id": 8
+    },
+    {
+      "comment": "",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
+      "id": 9
+    },
+    {
+      "comment": "",
+      "placeId": "3",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 2,
+      "arrOfRate": [
+        0,
+        1
+      ],
+      "id": 10
+    },
+    {
+      "comment": "asdfgh",
+      "placeId": "6",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": 11
+    },
+    {
+      "comment": "sdfg",
+      "placeId": "6",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": 12
+    },
+    {
+      "comment": "ssssssssssss",
+      "placeId": "6",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": 13
+    },
+    {
+      "comment": "eeeeeeeee",
+      "placeId": "6",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": 14
+    },
+    {
+      "comment": "",
+      "placeId": "6",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 4,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "id": 15
+    },
+    {
+      "comment": "good game and i was happy ",
+      "placeId": "7",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "id": 16
+    },
+    {
+      "comment": "",
+      "placeId": "7",
+      "userId": 6,
+      "userName": "esraa",
+      "userImg": "",
+      "rate": 5,
+      "arrOfRate": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "id": 17
     }
   ],
   "rates": [
     {
       "value": 4,
-      "placeId": "3",
+      "placeId": "1",
       "userId": 6,
+      "arrOfVals": [
+        0,
+        1,
+        2,
+        3
+      ],
       "id": 1
     },
     {
-      "value": 4,
-      "placeId": "3",
+      "value": 2,
+      "placeId": "1",
       "userId": 6,
+      "arrOfVals": [
+        0,
+        1
+      ],
       "id": 2
     },
     {
       "value": 4,
       "placeId": "3",
       "userId": 6,
+      "arrOfVals": [
+        0,
+        1,
+        2,
+        3
+      ],
       "id": 3
     },
     {
-      "value": 5,
-      "placeId": "4",
+      "value": 2,
+      "placeId": "3",
+      "userId": 6,
+      "arrOfVals": [
+        0,
+        1
+      ],
       "id": 4
     },
     {
-      "value": 5,
+      "value": 4,
       "placeId": "6",
+      "userId": 6,
+      "arrOfVals": [
+        0,
+        1,
+        2,
+        3
+      ],
       "id": 5
     },
     {
-      "value": 3,
+      "value": 5,
       "placeId": "6",
+      "userId": 6,
+      "arrOfVals": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
       "id": 6
+    },
+    {
+      "value": 5,
+      "placeId": "7",
+      "userId": 6,
+      "arrOfVals": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "id": 7
     }
   ],
   "favourites": [
@@ -1440,82 +1565,9 @@
     },
     {
       "placeId": "1",
-      "userId": 2,
+      "userId": 9,
       "id": 6
-    },
-    {
-      "placeId": "7",
-      "id": 7
     }
   ],
-  "history": [
-    {
-      "userId": 6,
-      "totalPrice": 80,
-      "reservedGame": [
-        {
-          "id": 22,
-          "name": "ice skatting ",
-          "price": "80",
-          "desc": " Public skating, family sessions, ice events, bar/cafe offering hot drinks, Figure Skating School, private lessons",
-          "count": 1,
-          "placeId": "6",
-          "img": "",
-          "hours": "7-10",
-          "date": "2020-02-04"
-        }
-      ],
-      "id": 1
-    },
-    {
-      "totalPrice": 200,
-      "reservedGame": [
-        {
-          "id": 38,
-          "name": "bowling",
-          "price": "50",
-          "desc": " For all bowling lovers in alexandria.",
-          "count": 1,
-          "placeId": "1",
-          "img": "",
-          "hours": "7-10",
-          "date": "2020-02-04"
-        },
-        {
-          "id": 39,
-          "name": "bing",
-          "price": "50",
-          "desc": " Spin and Smash Table Tennis & Ping Pong Center",
-          "count": 2,
-          "placeId": "1",
-          "img": "",
-          "hours": "4-6",
-          "date": "2020-02-06"
-        },
-        {
-          "id": 40,
-          "name": "billiards",
-          "price": "60",
-          "desc": " Spin and Smash Table Tennis & Ping Pong Center",
-          "count": 6,
-          "placeId": "1",
-          "img": "",
-          "hours": "4-6",
-          "date": "2020-02-07"
-        },
-        {
-          "id": 43,
-          "name": "africano trip",
-          "price": "200",
-          "desc": " Most of the landscapes and their accompanying plants and animals in a national park are kept in their natural state..",
-          "count": 1,
-          "placeId": "1",
-          "img": "",
-          "hours": "7-10",
-          "date": "2020-02-08"
-        }
-      ],
-      "id": 2
-    }
-  ]
+  "history": []
 }

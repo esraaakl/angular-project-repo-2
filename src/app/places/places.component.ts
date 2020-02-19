@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { PlacesService } from '../places.service';
 import { HttpServiceService } from '../http-service.service'
+import { OwlOptions } from 'ngx-owl-carousel-o';
+
 
 
 @Component({
@@ -10,11 +12,44 @@ import { HttpServiceService } from '../http-service.service'
   styleUrls: ['./places.component.scss']
 })
 export class PlacesComponent implements OnInit {
+  // //owel slider
+  // customOptions: OwlOptions = {
+  //   loop: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   pullDrag: false,
+  //   dots: false,
+  //   navSpeed: 700,
+  //   navText: ['', ''],
+  //   responsive: {
+  //     0: {
+  //       items: 1
+  //     },
+  //     400: {
+  //       items: 2
+  //     },
+  //     740: {
+  //       items: 3
+  //     },
+  //     940: {
+  //       items: 4
+  //     }
+  //   },
+  //   nav: true
+  // }
+
+  // slidesStor =  [
+  //   "https://i.postimg.cc/3wrgP8qk/29597227-765184363682115-8821015101476391077-n-3x.png",
+  //   "https://i.postimg.cc/XN9WXdx6/71651163-3026233807391152-2258242780025323520-o.png",
+  //   "https://i.postimg.cc/Mp6MGsm4/71225889-1159888144211733-5196100801054900224-o-3x.png"
+  // ]
+
+
   places;
-  singlePlace; 0
+  singlePlace;
   // ........///
   singlePlaceId;
-  singlePlaceData; //obj
+  singlePlaceData;
   // ........//
   placeLoggedin;
   options;
@@ -24,12 +59,7 @@ export class PlacesComponent implements OnInit {
   favs;
   user;
   spesifcFavId;
-  loggin;
-  // ........................///
-  finalTotal;
-  totalSingleGame;
-
-
+  
   constructor(private route: ActivatedRoute, private placeService: PlacesService, private httpService: HttpServiceService, private router: Router) {
 
     this.route.params.subscribe((param: Params) => {
@@ -54,48 +84,14 @@ export class PlacesComponent implements OnInit {
         this.favs = data;
         this.gettingSpesificOfFavs()
       })
-
-
     })
     this.placeLoggedin = this.httpService.getData("loggedin");
-    this.placeService.totalService.subscribe(data => {
-      this.finalTotal = data;
-
-    })
+   
   }
 
   ngOnInit() {
 
-    this.finalTotal = 0;
   }
-
-
-
-  savingSelectedGames() {
-    console.log("heeeeeeeeeeeello");
-    console.log(this.placeService.arrOfGames)
-    this.loggin = this.httpService.getData("loggedin");
-    if (this.loggin == true) {
-      if (this.finalTotal != 0) {
-        this.httpService.setData("finalTotal", this.finalTotal);
-        this.httpService.setData("choosenGames", this.placeService.arrOfGames);
-        this.finalTotal = 0;
-        this.placeService.arrOfGames = [];
-        this.router.navigate(["/reservation/FoYalaaPayment"])
-      }
-
-
-    }
-    else {
-      alert("you have to register");
-      this.router.navigate(["/register"])
-    }
-
-  }
-
-
-
-
 
   gettingSpesificOfFavs() {
     //  awl ma render el page bayshof hawa mawgod wala la?
@@ -205,8 +201,31 @@ export class PlacesComponent implements OnInit {
       this.router.navigate(["/register"])
     }
   }
+  // start img slider code
+  mainImg ;
+  leftArrow;
+  rightArrow;
+  onClick(img){
 
+    this.mainImg = document.getElementsByClassName('master-img2')[0]
+    this.mainImg.src = img.src
+    console.log(this.mainImg)
+    img.classList.add("selected");
+    img.nextElementSibling.classList.remove('selected')
+        img.previousElementSibling.classList.remove('selected');
 
+        document.querySelectorAll(".thumb-img")[0].addEventListener('click',function(){
+          document.querySelectorAll(".thumb-img")[2].classList.remove('selected')
+        })
+  }
 
-
+  onLeftClick(leftArrow){
+this.leftArrow=document.querySelector('.selected')
+this.leftArrow.previousElementSibling.click()
+  }
+  onRightClick(rightArrow){
+    this.rightArrow=document.querySelector('.selected')
+    this.rightArrow.nextElementSibling.click()
+      }
+  // end img slider code
 }

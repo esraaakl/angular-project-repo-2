@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { PlacesService } from '../places.service';
 import { HttpServiceService } from '../http-service.service'
 import { Router } from '@angular/router';
-import * as $ from 'jquery';
-
 
 
 @Component({
@@ -56,13 +54,6 @@ export class HeaderComponent implements OnInit {
     this.httpService.headerProfile.subscribe(data => { ///object behavior
       this.headerLoggedin = data;
     })
-
-    // search input toggle:
-     
-    $('#searchBtn').click(function(){
-      $('.form-control').toggle()
-    })
-
 
   }
 
